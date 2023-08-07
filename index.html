@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>CATAN</title>
+      </head>
+      
+    <body>
+        <div class="topnav">
+            <a href="./index.html">Home</a>
+            <a href="./info.html">Info</a>
+            <a href="./reviews.html">Review</a>
+            <a href="./about.html">About</a>
+        </div>
+        <header>
+            <h1>CATAN</h1>
+            <img id="logo" src="./images/hex_logo2.png" alt="Logo" width="100" height="100">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
+        </header>
+        
+        <div class = "main">
+            <aside class="left">
+            </aside>
+            
+            <main>
+                <p>Catan is one the world's most popular board games. It is available worlwide in over 40 language. To date, over 40 million games have been sold. </p><br>
+                <p>Since its inception, it has gained a loyal following across the world. </p><br>
+
+                <figure>
+                    <img id="tournament" src="./images/tournament.jpg" alt="Players playing in Catan Tournament" width="650" height="500">
+                    <figcaption>Fig-1 Players playing in Catan Tournament. Source: Wikipedia Commons. </figcaption><br>
+                </figure>
+
+                <p>Parts of its success is attributed to its well-designed gameplay where numerous strategies are created and evolve allowing players to keep coming back for more!</p><br>
+                
+                <figure>
+                    <img id="board" src="./images/board.jpg" alt="Board Game Set-Up" width="650" height="500">
+                    <figcaption>Fig-2 Catan Board Game Set-up. Source: Yonghokim. </figcaption><br>
+                </figure>
+                
+                <h2 id="Catan List">Catan Overview:</h2><br>
+                <ul style="text-align: left;">
+                <li>Catan is a board game for two-four players.</li>
+                <li>The players compete with one another to gather resources and build the biggest settlement.</li>
+                <li>It takes approximately 1hr to play.</li>
+                </ul><br>
+                
+                <figure>
+                <iframe width="703" height="395" src="https://www.youtube.com/embed/6OF32Eq5DZo" title="How to Play CATAN - The Most Adorable Overview Ever" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figcaption>Fig-3 How to Play Catan. Source: Catan Official Youtube. </figcaption><br>
+                </figure>
+            </main>
+            
+            <aside class="right">
+            </aside>
+        </div>
+        
+        <footer>
+            <form id="newsletter-sign-up" action="https://httpbin.org/post" method="POST" >
+                    <fieldset>
+                        <legend>Newsletter Subscription</legend>
+                        <label id="emailLabel">E-mail:</label>
+                        <input type="email" spellcheck="false" id="email">
+                        <span id="errorMsg"></span>
+                        <input type="hidden" id="myName" name="myName" value="Christine">
+                        <input type="submit" value="Join">
+                    </fieldset>
+            </form>
+        </footer>
+
+        <script src="app.js"></script>
+
+    </body>
+    
+</html>

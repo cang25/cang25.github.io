@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>CATAN</title>
+    </head>
+    
+    <body>
+        <div class="topnav">
+            <a href="./index.html">Home</a>
+            <a href="./info.html">Info</a>
+            <a href="./reviews.html">Review</a>
+            <a href="./about.html">About</a>
+        </div>
+        <header>
+            <h1>CATAN</h1>
+            <img id="logo" src="./images/hex_logo2.png" alt="Logo" width="100" height="100">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
+        </header>
+
+
+
+        <div class = "main">
+            <aside class="left">
+            </aside>
+            <main>
+                <div class="cards" id="reviewsDis">
+                    <!--display Review here-->
+                </div>
+        
+                <form class="newReview" id="newRev">
+                    <fieldset>
+                        <legend>REVIEW</legend>
+                        <label for="name">Name:</label>
+                        <input class="newReview" type="text" id="name" required><br><br>
+                        
+                        <label for="rating">Rating</label>
+                        <select id="rating" name="rating">
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                            <option value="0">0</option>
+                          </select><br><br>
+                        
+                        <textarea class="newReview" required id="postReview" rows="4" cols="50"
+                    placeholder="Leave Review Here"></textarea><br><br>
+                        
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form>
+            </main>
+            <aside class="right">
+            </aside>
+        </div>
+        <footer>
+        </footer>
+
+        <script src="data.js"></script>
+        <script src="app.js"></script>
+
+    </body>
