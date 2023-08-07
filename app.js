@@ -69,22 +69,11 @@ function addReview() {
 function ValidEmail() {
     
     var form = document.getElementById("newletter-sign-up");
-    var emailInput = document.getElementById('email');
-    var emailError = document.getElementById('errorMsg');
 
     form.addEventListener('submit', (event) =>{
-        if (!validateEmail(emailInput.value)) {
             event.preventDefault();
-        } else {
-            emailError.textContent = '';
-        }
-});
-
-function validateEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-    
+      
+});   
 }
 
 function onLoad(){
